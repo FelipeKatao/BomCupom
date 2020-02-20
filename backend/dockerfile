@@ -1,8 +1,8 @@
 FROM ruby:2.5
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
-RUN mkdir /myapp
-WORKDIR /myapp
-COPY Gemfile /myapp/Gemfile
-COPY Gemfile.lock /myapp/Gemfile.lock
+RUN mkdir /bomcupom
+WORKDIR /bomcupom
+COPY Gemfile /bomcupom/Gemfile
+COPY Gemfile.lock /bomcupom/Gemfile.lock
 RUN bundle install
-COPY . /myapp
+COPY . /bomcupom
