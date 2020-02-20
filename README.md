@@ -1,2 +1,2 @@
-# BomCupom
-Aplicação Web para a franquia Bom cupom
+#PROJETO BOM CUPOM
+##Utilizado Ruby,Docker e Heroku
