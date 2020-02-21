@@ -2,6 +2,8 @@ version: '2'
 services:
   db:
     image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
     environment: 
         POSTGRES_HOST_AUTH_METHOD: trust
   web:
